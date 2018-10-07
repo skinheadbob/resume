@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{resume}[2015/05/25 An elegant Résumé class]
+\ProvidesClass{resume}[]
 \LoadClass[11pt]{article}
 
 % disable indent globally
@@ -49,7 +49,7 @@
 \RequirePackage[super]{nth}
 
 \titleformat{\section}         % Customise the \section command 
-  {\Large\scshape\raggedright} % Make the \section headers large (\Large),
+  {\Large\raggedright} % Make the \section headers large (\Large),
                                % small capitals (\scshape) and left aligned (\raggedright)
   {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
   {}                           % Can be used to insert code before the heading
@@ -73,7 +73,7 @@
 }
 
 \newcommand{\name}[1]{
-  \centerline{\Huge\scshape{#1}}
+  \centerline{\Huge{#1}}
   \vspace{1.25ex}
 }
 
